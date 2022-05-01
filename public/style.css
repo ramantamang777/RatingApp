@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-main: rgb(243, 243, 67);
+    --color-white: rgb(247, 247, 247);
+    --color-gold: rgb(255, 217, 0);
+    --color-background: rgb(69, 69, 243);
+}
+
+body{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.feedback-container{
+    position: relative;
+    background-color: var(--color-white);
+    border-radius: 1.2rem;
+    height: 300px;
+    width: 400px;
+    box-shadow: 0.2rem 0.1rem 0.3rem 0.1rem rgb(52, 52, 52);
+}
+
+.emojis-container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    width: 18px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+}
+
+.face-angry{
+    margin: 1px;
+    transform: translateX(-0%);
+    transition: transform 0.2s;
+}
+
+.star-container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:60%;
+}
+
+.fa-star{
+  color: rgb(104, 100, 100);
+  cursor: pointer;
+}
+
+.fa-star.active{
+    color: gold;
+}
