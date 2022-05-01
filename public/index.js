@@ -1,5 +1,6 @@
 const stars = document.querySelectorAll(".fa-star");
 const emojis = document.querySelectorAll(".face-angry");
+const colorArray = ["red", "grey", "blue", "rgb(234, 177, 44)", "green"];
 stars.forEach((eles, index) => {
     eles.addEventListener("click", () => {
         console.log("clicked", index);
@@ -23,5 +24,6 @@ function updatingRate(index){
 
     emojis.forEach((emojieles) => {
         emojieles.style.transform = `translateX(-${index * 18}px)`;
+        emojieles.style.color = colorArray[index];
     })
 };
